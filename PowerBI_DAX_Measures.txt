@@ -1,0 +1,13 @@
+# Power BI DAX Measures
+
+Total Revenue = SUM('Sales Data'[Sales])
+
+Total Orders = DISTINCTCOUNT('Sales Data'[Order ID])
+
+Total Customers = DISTINCTCOUNT('Sales Data'[Customer ID])
+
+Average Order Value = DIVIDE([Total Revenue], [Total Orders], 0)
+
+Average Sales = AVERAGE('Sales Data'[Sales])
+
+Total Products = DISTINCTCOUNT('Sales Data'[Product ID])
